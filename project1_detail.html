@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>프로젝트 상세 - 영화 리뷰 웹시스템 개발</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Arial', 'Noto Sans KR', sans-serif; 
+            background-color: #f8f9fa;
+        }
+        .detail-container { 
+            max-width: 900px; 
+            margin: 50px auto; 
+            background-color: #ffffff; 
+            padding: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        }
+        .back-link { margin-bottom: 25px; display: block; }
+        .section-heading { border-bottom: none; padding-bottom: 0; margin-top: 0; margin-bottom: 15px; font-size: 1.2rem; font-weight: bold; }
+        
+        /* 1. 제목 및 요약 스타일 */
+        .project-title-group { margin-bottom: 20px; }
+        .project-title { 
+            font-weight: 700; 
+            color: #212529; 
+            font-size: 2rem; 
+            line-height: 1.2;
+            word-break: keep-all; 
+            margin-bottom: 10px;
+        }
+        .project-subtitle {
+            font-size: 1rem; 
+            color: #6c757d;
+            margin-top: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* 2. 카드 스타일 섹션 (그림자 포함) */
+        .card-style-section {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px; 
+            background-color: #fcfcfc;
+            /* ✨ 그림자 효과 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease; 
+        }
+        .card-style-section:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 3. 하이픈 및 넓은 줄 간격 리스트 스타일 */
+        .detail-list { 
+            list-style: none; 
+            padding-left: 0; 
+            margin-bottom: 0; 
+            line-height: 2.2; 
+        }
+        .detail-list li:before {
+            content: "- "; 
+            font-weight: bold;
+            color: #007bff; 
+            margin-right: 5px;
+        }
+        
+        .skill-tag { display: inline-block; background-color: #e9ecef; color: #333; padding: 5px 10px; margin-right: 8px; margin-bottom: 8px; border-radius: 4px; font-size: 0.9rem; }
+        
+        /* 📄 인쇄 관련 스타일 (index.html과 동일) */
+        @media print {
+            .back-link, #print-area { 
+                display: none !important;
+            }
+            .detail-container { 
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="detail-container">
+        <a href="index.html" class="back-link text-decoration-none">← 이력서 메인으로 돌아가기</a> 
+        
+        <div class="project-title-group">
+            <h1 class="project-title">🎬 영화 리뷰 웹시스템 개발</h1>
+            <p class="text-muted">2024.04 ~ 2024.06 (3개월, 개인 프로젝트)</p>
+            <p class="project-subtitle">TMDB API를 활용하여 최신 영화 정보와 실시간 평점을 제공하고, 사용자가 자유롭게 리뷰를 작성 및 공유할 수 있도록 구현한 JSP 기반의 웹 프로젝트입니다.</p> 
+        </div>
+
+        <div class="card-style-section">
+            <h4 class="section-heading">🛠️ 주요 기술 스택</h4>
+            <div class="mb-2">
+                <span class="skill-tag">JSP</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TMDB API</span>
+                <span class="skill-tag">Bootstrap</span>
+            </div>
+        </div>
+
+        <div class="card-style-section">
+            <h4 class="section-heading">🧑‍💻 담당 역할</h4>
+            <ul class="detail-list">
+                <li>JSP를 활용한 웹 시스템 아키텍처 및 로직 설계</li>
+                <li>MySQL 기반 사용자 인증 및 리뷰 CRUD 기능 개발</li>
+                <li>HTML/CSS/Bootstrap을 사용한 반응형 UI 구현</li>
+                <li>프로젝트 전반의 데이터베이스(ERD) 설계 및 구축</li>
+            </ul>
+        </div>
+
+        <div class="card-style-section">
+            <h4 class="section-heading">⭐ 주요 기능</h4>
+            <ul class="detail-list">
+                <li>TMDB API를 통한 실시간 영화 정보 및 평점 제공</li>
+                <li>사용자 리뷰 작성, 수정, 삭제 및 목록 조회 기능</li>
+                <li>MySQL을 활용한 영화, 사용자, 리뷰 데이터 관리</li>
+                <li>회원가입, 로그인, 로그아웃 등 사용자 인증 시스템</li>
+            </ul>
+        </div>
+
+        <div id="print-area" class="text-end mt-5 pt-3 border-top">
+            <button class="btn btn-dark" onclick="window.print()">
+                PDF 저장 / 인쇄하기
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
