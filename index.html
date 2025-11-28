@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>홍현기 개발자 포트폴리오</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        
+        body {
+            background-color: #f4f4f4; 
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif; 
+            color: #333;
+        }
+        .resume-container {
+            max-width: 950px; 
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 60px; 
+            padding-bottom: 10px; 
+            border-bottom: 3px solid #000; 
+        }
+
+        .resume-container section p {
+            line-height: 1.7; 
+            margin-bottom: 1.5rem !important; 
+        }
+        .resume-container section ul {
+            padding-left: 20px;
+            line-height: 1.6; 
+        }
+        .resume-container section ul li {
+             margin-bottom: 8px; 
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            background-color: #f0f0f0; 
+            color: #333;
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        
+        .project-card-row {
+             margin-top: 30px;
+        }
+        .clickable-link-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer; 
+            transition: all 0.2s ease-in-out;
+            min-height: 200px;
+            text-decoration: none;
+            color: #333;
+            display: block; 
+        }
+        .clickable-link-card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .profile-photo { width: 150px; height: 150px; object-fit: cover; border-radius: 0; border: 1px solid #ddd; }
+        .main-title { font-size: 2.4rem; font-weight: 700; }
+        .section-item-title { font-weight: bold; color: #212529; }
+        .contact-info p { margin-bottom: 4px; }
+        
+        
+        @media print {
+            
+            #print-area { display: none !important; }
+            
+            
+            .resume-container { font-size: 0.9em !important; }
+
+            
+            .motivation-section {
+                page-break-before: always; 
+                margin-top: 0 !important; 
+            }
+            
+            .skills-section {
+                page-break-before: always; 
+                margin-top: 0 !important; 
+            }
+
+            
+            .col-md-4, .col-md-3, .col-md-6 {
+                float: left !important;
+                width: 33.333% !important; 
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                page-break-inside: avoid;
+            }
+
+            
+            .clickable-link-card {
+                height: 220px !important; 
+                min-height: 220px !important; 
+                max-height: 220px !important; 
+                display: block !important; 
+                overflow: hidden; 
+                padding: 0;
+            }
+            
+            .clickable-link-card.h-100 { height: 220px !important; }
+            .clickable-link-card .card-body {
+                display: block !important; 
+                font-size: 0.85rem !important;
+                padding: 10px !important;
+            }
+            .clickable-link-card .card-title {
+                font-size: 1.0rem !important;
+            }
+            
+            
+            .card {
+                box-shadow: none !important;
+                border: 1px solid #ccc !important;
+            }
+            
+            
+            .col-md-6 { width: 50% !important; }
+            .col-md-3 { width: 25% !important; }
+            .col-md-8 { width: 66.666% !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <header class="pb-4 border-bottom border-3 border-dark">
+            <div class="row align-items-center">
+                
+                <div class="col-8">
+                    <h1 class="main-title mb-1">홍현기</h1>
+                    <p class="lead text-muted mb-4">새로운 도전을 즐기는 백엔드/하드웨어 융합 지향 개발자입니다.</p>
+                    
+                    <div class="small contact-info">
+                        
+                        <p> <a href="mailto:202344049@itc.ac.kr" class="text-decoration-none text-dark"><i class="fas fa-envelope me-2"></i>202344049@itc.ac.kr</a></p>
+                        <p> <a href="tel:01048296412" class="text-decoration-none text-dark"><i class="fas fa-phone me-2"></i>010-4829-6412</a></p>
+                        <p> <a href="https://github.com/Hong0519" target="_blank" class="text-decoration-none text-dark"><i class="fab fa-github me-2"></i>GitHub: github.com/Hong0519</a></p>
+                    </div>
+                </div>
+
+                <div class="col-4 text-end">
+                    <img src="증명사진.jpeg" alt="홍현기 증명사진" class="profile-photo"> 
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h3 class="section-title">ABOUT ME</h3>
+            <p class="mt-4">
+                웹 프로그래밍 기초(HTML, CSS, JavaScript) 및 서버 측 언어(Java, C#)에 대한 이해를 바탕으로 실질적인 결과물을 만드는 것에 집중하는 개발자입니다. 특히 JSP 기반 웹 시스템 개발과 Java Swing을 이용한 데스크톱 애플리케이션 구현 경험이 탄탄하며, 데이터베이스(MySQL) 연동 및 관리 능력을 갖추고 있습니다.
+            </p>
+            <p>
+                대학교 및 개인 프로젝트를 통해 다양한 환경에서의 개발 경험을 쌓았으며, 프로젝트 과정에서 발생하는 복잡한 기술적 문제를 분석하고 해결하는 데 강점을 보입니다. 새로운 기술 스택을 접할 때 호기심을 갖고 능동적으로 학습하여 빠르게 적용하며, 팀원들과의 원활한 소통을 통해 프로젝트 목표 달성에 기여합니다.
+            </p>
+        </section>
+        
+        
+        <section>
+            <h3 class="section-title">BACKGROUND & GROWTH</h3>
+            <p class="mt-4">
+                어린 시절부터 전자기기의 작동 원리에 대한 깊은 호기심을 가졌고, 이러한 탐구심이 자연스레 컴퓨터정보공학 전공으로 이어졌습니다. 대학에서는 이론 학습뿐만 아니라 실습 위주의 커리큘럼을 통해, 단순한 코딩을 넘어 실제 사용 가능한 결과물을 만들어내는 과정에서 큰 성취감을 느꼈습니다. 특히 다양한 프로젝트를 수행하며 오류를 분석하고 해결하는 문제 해결 능력을 길렀으며, 이는 끊임없는 학습과 도전을 통해 성장하는 개발자가 되는 데 중요한 밑거름이 되었습니다.
+            </p>
+        </section>
+        
+        
+        
+        <section class="motivation-section">
+            <h3 class="section-title">MOTIVATION & AMBITION</h3>
+            <p class="mt-4">
+                저는 데이터 기반의 실질적인 문제 해결에 대한 흥미를 바탕으로 백엔드 개발에 집중해왔습니다. 특히 IT 기술을 통해 현실 세계의 문제를 해결하고 사용자에게 가치를 제공하려는 모든 조직에 공감하며, 제가 가진 JSP/Java Swing 기반의 개발 경험과 하드웨어 융합 역량을 통해 프로젝트의 성공적인 완수와 기술적 성장에 기여하고자 합니다. 
+            </p>
+            <p>
+                입사 후에는 팀의 시스템과 문화에 빠르게 적응하여 안정적인 운영에 기여하는 것이 단기 목표입니다. 장기적으로는 단순히 요구사항을 구현하는 것을 넘어 사용자 경험을 개선하고 유지보수가 용이한 구조를 설계할 수 있는 핵심 개발자로 성장하여, 기술력과 소통 능력을 겸비한 리더십을 발휘하고 싶습니다.
+            </p>
+        </section>
+        
+
+        <section>
+            <h3 class="section-title">PERSONALITY</h3>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h6 class="section-item-title mb-2">장점 (Strengths)</h6>
+                    <ul class="small">
+                        <li>책임감이 강하며, 맡은 일은 일정을 준수하여 확실하게 완료합니다.</li>
+                        <li>새로운 기술을 접할 때 두려움 없이 빠르게 학습하여 프로젝트에 적용하는 적응력을 가졌습니다.</li>
+                        <li>팀원들과 협업 시 의견을 명료하게 전달하여 효율적인 소통을 추구합니다.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="section-item-title mb-2">단점 (Weaknesses)</h6>
+                    <ul class="small">
+                        <li>완성도에 대한 집착으로 때때로 중요도가 낮은 세부적인 부분에 시간을 과도하게 사용할 때가 있습니다.</li>
+                        <li>다양한 선택지 앞에서 최선의 결과를 내기 위해 초기 결정 과정에서 고민하는 경향이 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">PROJECTS / ACTIVITIES</h3>
+            
+            <div class="row project-card-row">
+                
+                <div class="col-md-4 mb-4">
+                    <a href="project1_detail.html" class="card h-100 clickable-link-card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title mb-1">🎬 영화 리뷰 웹시스템</h5>
+                                <span class="text-muted small d-block mb-2">2024.04 ~ 2024.06 (개인 프로젝트)</span>
+                                
+                                <div class="mt-2">
+                                    <span class="skill-tag">JSP</span>
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">TMDB API</span>
+                                </div>
+                                
+                                <p class="card-text mt-3 mb-0 small text-dark">TMDB API를 활용하여 1인 개발로 구현, 사용자 평점 기능 구현 및 DB 최적화.</p>
+                            </div>
+                            <p class="text-primary mt-3 mb-0 small" style="font-weight: bold;">
+                                클릭하여 자세히 보기 →
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <a href="project2_detail.html" class="card h-100 clickable-link-card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title mb-1">🧠 Kinect 치매 예방 앱</h5>
+                                <span class="text-muted small d-block mb-2">2024.07 ~ 2024.10 (팀 프로젝트)</span>
+                                
+                                <div class="mt-2">
+                                    <span class="skill-tag">Unity</span>
+                                    <span class="skill-tag">C#</span>
+                                    <span class="skill-tag">Kinect SDK</span>
+                                </div>
+
+                                <p class="card-text mt-3 mb-0 small text-dark">Kinect 센서 연동 및 3D 동작 인식 훈련 애플리케이션 주요 알고리즘 구현 (기여도 40%).</p>
+                            </div>
+                            <p class="text-primary mt-3 mb-0 small" style="font-weight: bold;">
+                                클릭하여 자세히 보기 →
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <a href="project3_detail.html" class="card h-100 clickable-link-card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title mb-1">🏥 JAVA 헬스케어 시스템</h5>
+                                <span class="text-muted small d-block mb-2">2024.11 ~ 2025.03 (팀 프로젝트)</span>
+                                
+                                <div class="mt-2">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Swing (GUI)</span>
+                                    <span class="skill-tag">MySQL</span>
+                                </div>
+
+                                <p class="card-text mt-3 mb-0 small text-dark">Java Swing GUI 기반 개인 건강 데이터의 CRUD 기능 안정화 및 DB 연동 담당.</p>
+                            </div>
+                            <p class="text-primary mt-3 mb-0 small" style="font-weight: bold;">
+                                클릭하여 자세히 보기 →
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div> 
+        </section>
+
+        <section class="skills-section">
+            <h3 class="section-title">SKILLS</h3>
+            <div class="row mt-4">
+                <div class="col-md-3 small project-item-spacing">
+                    <h6 class="section-item-title">Language</h6>
+                    <p>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                    </p>
+                </div>
+                <div class="col-md-3 small project-item-spacing">
+                    <h6 class="section-item-title">Frontend/GUI</h6>
+                    <p>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Swing (Java)</span>
+                        <span class="skill-tag">Unity UI</span>
+                    </p>
+                </div>
+                <div class="col-md-3 small project-item-spacing">
+                    <h6 class="section-item-title">Backend/DB</h6>
+                    <p>
+                        <span class="skill-tag">JSP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL</span>
+                    </p>
+                </div>
+                <div class="col-md-3 small project-item-spacing">
+                    <h6 class="section-item-title">Tools/Etc</h6>
+                    <p>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Kinect SDK</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">TMDB API</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3 class="section-title">EDUCATION</h3>
+            
+            <div class="row mt-4 project-item-spacing">
+                <div class="col-md-8">
+                    <h5 class="section-item-title mb-0">인하공업전문대학교</h5>
+                    <p class="text-muted mb-0">컴퓨터정보공학과 (전문학사)</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="text-muted mb-0">2026.02.13 졸업 예정</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="print-area" class="text-end mt-5 pt-3 border-top">
+            <button class="btn btn-dark" onclick="window.print()">
+                PDF 저장 / 인쇄하기
+            </button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
